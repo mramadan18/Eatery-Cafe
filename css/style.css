@@ -1,0 +1,290 @@
+/* START GLOBAL */
+body {
+  font-family: "Montserrat", sans-serif;
+}
+/* END GLOBAL */
+
+/* START NAVBAR */
+.navbar .navbar-brand {
+  font-weight: bold !important;
+}
+
+.navbar .navbar-brand span {
+  color: red;
+}
+
+.navbar a {
+  color: white !important;
+  font-weight: 500;
+}
+
+.navbar.active a {
+  color: black !important;
+}
+
+.navbar .navbar-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navbar.active .navbar-right > a {
+  color: white !important;
+}
+/* END NAVBAR */
+
+/* START HOME */
+.home .carousel-item {
+  height: 70vh;
+}
+
+.carousel-caption {
+  top: 55%;
+  bottom: 0;
+  text-align: left;
+  width: 40rem;
+  transform: translateY(-50%);
+}
+
+@media (max-width: 576px) {
+  .carousel-caption {
+    width: 20rem;
+  }
+}
+/* END HOME */
+
+/* START ABOUT */
+.about {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.about h6 {
+  font-size: 12px;
+  color: #777;
+  font-weight: bold;
+}
+
+.about p {
+  color: #777;
+}
+/* END ABOUT */
+
+/* START TEAM */
+.team {
+  padding-bottom: 6rem;
+}
+
+.team .img {
+  position: relative;
+  overflow: hidden;
+}
+
+.team .img .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  color: white;
+  transform: translateY(100%);
+  transition: 0.5s;
+}
+
+.team .img:hover .overlay {
+  transform: translateY(0%);
+}
+
+.team .img .overlay .icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.team .img .overlay .icons svg {
+  padding: 1rem;
+  font-size: 20px;
+  background-color: #444;
+  border-radius: 50%;
+}
+
+.team h4 {
+  font-weight: bold;
+}
+
+.team h4 + p {
+  color: #888;
+  font-size: 12px;
+  font-weight: 700;
+}
+/* END TEAM */
+
+/* START MENU */
+.menu .img {
+  position: relative;
+  overflow: hidden;
+}
+
+.menu .img .overlay {
+  position: absolute;
+  width: 100%;
+  height: 40%;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  text-align: left;
+  padding: 1rem 1.5rem;
+  color: white;
+  transform: translateY(100%);
+  transition: 0.5s;
+}
+
+.menu .img:hover .overlay {
+  transform: translateY(0);
+}
+
+.menu .img .overlay p {
+  color: #777;
+  font-size: 16px;
+}
+/* END MENU */
+
+/* START TESTIMONIALS */
+.testimonials {
+  padding: 6rem 0;
+  background-image: url("../images/testimonial-bg.jpg");
+  background-attachment: fixed;
+  position: relative;
+}
+
+.testimonials::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 0;
+}
+
+.testimonials .carousel-indicators {
+  margin-bottom: -3rem;
+}
+
+.testimonials .carousel-inner {
+  padding: 0 2rem;
+}
+
+.testimonials p {
+  color: #d9d9d9;
+  font-weight: 100;
+}
+
+.testimonials .tst-author {
+  display: flex;
+  justify-content: center;
+  gap: 0.2rem;
+}
+
+.testimonials .tst-author h4 {
+  font-size: 18px;
+  color: #999;
+}
+
+.testimonials .tst-author span {
+  color: #ddd;
+}
+/* END TESTIMONIALS */
+
+/* START CONTACT */
+.contact {
+  padding: 6rem 0;
+}
+
+.contact input {
+  border: none;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+.contact input::placeholder {
+  color: #999;
+}
+
+.contact textarea {
+  border: none;
+  border-bottom: 1px solid #ddd;
+  color: #999;
+}
+
+.contact textarea::placeholder {
+  color: #999;
+}
+/* END CONTACT */
+
+/* START FOOTER */
+.footer {
+  padding: 6rem 0;
+}
+
+.footer .white {
+  color: white;
+}
+
+.footer .light {
+  color: #999;
+}
+
+.footer .open-hours {
+  background-image: url("../images/footer-open-hour-bg.jpg");
+  background-size: cover;
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+  padding: 4rem 0;
+}
+
+.footer .open-hours::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 0;
+}
+
+.footer .open-hours ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer .icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  color: #ffffff;
+}
+
+.footer p {
+  font-size: 14px;
+  color: #999;
+}
+
+/* END FOOTER */
